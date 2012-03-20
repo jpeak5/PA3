@@ -30,6 +30,7 @@ public class ThreadCB extends IflThreadCB
     public ThreadCB()
     {
         super();
+        Logger.Log("constructor", "begin method", null);
     }
 
     /**
@@ -41,6 +42,7 @@ public class ThreadCB extends IflThreadCB
     public static void init()
     {
         // your code goes here
+    	Logger.Log("init", "begin method", null);
 
     }
 
@@ -64,6 +66,7 @@ public class ThreadCB extends IflThreadCB
     static public ThreadCB do_create(TaskCB task)
     {
         // your code goes here
+    	Logger.Log("do_create", "begin method", null);
 
     }
 
@@ -82,6 +85,7 @@ public class ThreadCB extends IflThreadCB
     */
     public void do_kill()
     {
+    	Logger.Log("do_kill", "begin method", null);
         // your code goes here
 
     }
@@ -105,6 +109,7 @@ public class ThreadCB extends IflThreadCB
     public void do_suspend(Event event)
     {
         // your code goes here
+    	Logger.Log("do_suspend", "begin method", null);
 
     }
 
@@ -120,7 +125,7 @@ public class ThreadCB extends IflThreadCB
     public void do_resume()
     {
         // your code goes here
-
+    	Logger.Log("do_resume", "begin method", null);
     }
 
     /** 
@@ -139,6 +144,7 @@ public class ThreadCB extends IflThreadCB
     public static int do_dispatch()
     {
         // your code goes here
+    	Logger.Log("do_dispatch", "begin method", null);
 
     }
 
@@ -153,6 +159,7 @@ public class ThreadCB extends IflThreadCB
     public static void atError()
     {
         // your code goes here
+    	Logger.Log("atError", "begin method", null);
 
     }
 
@@ -166,6 +173,7 @@ public class ThreadCB extends IflThreadCB
     public static void atWarning()
     {
         // your code goes here
+    	Logger.Log("atWarning", "begin method", null);
 
     }
 
@@ -179,3 +187,8 @@ public class ThreadCB extends IflThreadCB
 /*
       Feel free to add local classes to improve the readability of your code
 */
+public class Logger{
+	static void Log(String method, String s, Object... args){
+		System.out.println("["+method+"]" + String.format(s, args));
+	}
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="Demo.jar"/>
+	<classpathentry exported="true" kind="lib" path="OSP.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/prog3/OSP.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
